@@ -25,12 +25,13 @@ if ($handle) {
                 $dt = array();
                 $dt['skos:prefLabel'] = trim($fd[0]);
                 $dt['Class'] = $class;               
+                print_r($fd);
                 for ($r=1;$r < count($fd);$r++)
                     {
+                        
                         $dt[$hd[$r]] = $fd[$r];
                     }
-                $ws->save($dt, $dt['skos:prefLabel'],$force);
-                
+                $ws->save($dt, $dt['skos:prefLabel'],$force);                
             }
             $row++;
     }

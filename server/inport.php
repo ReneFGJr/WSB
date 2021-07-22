@@ -112,31 +112,3 @@ $dt['skos:broader'] = 'brapci:brasil';
 $dt['Class'] = 'State';
 $name = 'espirito_santo';
 $ws->save($dt, $name);
-
-echo '<h1>Inport</h1>';
-$file = 'cidade-es.csv';
-$handle = fopen($file, "r");
-if ($handle) {
-    while (($line = fgets($handle)) !== false) {
-        $line = utf8_encode($line);
-        $ln = splitx(';', $line);
-        $name = ascii($ln[0]);
-
-        $class = 'City';
-        $dt = array();
-        $dt['prefLabel'] = $ln[0];
-        $dt['hasPlaceState'] = 'brapci:espirito_santo';
-        $dt['hasCodeIBGE'] = $ln[1];
-        $dt['Class'] = 'City';
-        $name = $ln[0];
-        $name = ascii($name);
-        $name = strtolower($name);
-        $name = troca($name, ' ', '_');
-        $force_save = 1;
-        $ws->save($dt, $name, $force_save);
-    }
-
-    fclose($handle);
-} else {
-    // error opening the file.
-}

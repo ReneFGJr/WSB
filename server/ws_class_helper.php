@@ -361,7 +361,7 @@ class wsc //extends CI_Model
                             $ln = $this->phrase_ws[$r];
                             for ($z=0;$z < count($ln);$z++)
                             {
-                                if ($z > 0) { $sx .= '<br>';}
+                                if ($z > 0) { $sx .= cr();}
                                 $sx .= $ln[$z];
                             }
                         }

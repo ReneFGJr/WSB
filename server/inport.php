@@ -15,6 +15,7 @@ require("../helpers/form_sisdoc_helper.php");
 $ws = new wsc;
 $ws->dir = '../source/';
 $force = TRUE; /* Força gravação, se já existe dados */
+$force = False;
 
 require("inport_stopwords.php");
 require("inport_simbolos.php");

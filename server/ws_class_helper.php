@@ -141,7 +141,7 @@ class wsc //extends CI_Model
         $c = array('(', ')');
         $name = troca($name, $c, '');
 
-        $c = array(' ', '-', ',', '.');
+        $c = array(' ', '-', ',', '.','/','\\','&');
         $name = troca($name, $c, '_');
         return ($name);
     }
@@ -162,10 +162,10 @@ class wsc //extends CI_Model
         $excluir=0;
         if ($excluir==1)
         {
-            echo '<br>Buscando '.$file;
+            echo cr().'Buscando '.$file;
             if (file_exists($file))
                 {
-                    echo '==>EXCLUíDO';
+                    echo cr().'==>EXCLUíDO';
                     unlink($file);
                 }
             return("");

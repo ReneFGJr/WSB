@@ -27,9 +27,9 @@ if ($handle) {
                 $dt['Class'] = $class;               
                 for ($r=1;$r < count($fd);$r++)
                     {                        
-                        if (!isset($fd[$r]))
+                        if (!isset($hd[$r]))
                             {
-                                print_r($fd);
+                                print_r($hd);
                             } else {
                                 $dt[$hd[$r]] = $fd[$r];
                             }

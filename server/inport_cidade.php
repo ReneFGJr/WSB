@@ -1,7 +1,7 @@
 <?php
 /********************************** Ciencia da Informação - thesa */
 $class = 'City';
-echo '<h1>'.$class.'</h1>'.cr();
+echo cr().'######### Cidade';
 $uf = array('sp','sc','rs','pr','es','sp','rj','pe','mg');
 $uf_name = array('São Paulo','Santa Catarina','Rio Grande do Sul','Paraná','Espirito Santo','São Paulo','Rio de Janeiro','Pernanbuco','Minas Gerais');
 for ($q=0;$q < count($uf);$q++)
@@ -44,6 +44,4 @@ for ($q=0;$q < count($uf);$q++)
     } else {
         echo "Erro ao ler o arquivo ".$file2;
     }
-    echo "Importado ".$row." linhas ";
-
 }

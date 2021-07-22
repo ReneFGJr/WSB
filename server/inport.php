@@ -24,6 +24,7 @@ require("inport_paises.php");
 require("inport_genere.php");
 require("inport_years.php");
 require("inport_meses.php");
+exit;
 require("inport_estdos_brasil.php");
 require("inport_universidade.php");
 require("inport_cidade.php");

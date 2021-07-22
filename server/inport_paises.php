@@ -28,7 +28,7 @@ if ($handle) {
                     {
                         $dt[$hd[$r]] = $fd[$r];
                     }
-                echo '<br>=>'.$dt['skos:prefLabel'];
+                echo '=>'.$dt['skos:prefLabel'].cr();
                 $ws->save($dt, $dt['skos:prefLabel'],$force);
                 
             }
@@ -36,6 +36,6 @@ if ($handle) {
     }
     fclose($handle);
 } else {
-    echo "Erro ao ler o arquivo ".$file2;
+    echo "Erro ao ler o arquivo ".$file2.cr();
 }
 echo "Importado ".$row." linhas ";

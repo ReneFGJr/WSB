@@ -47,10 +47,10 @@ $th = 10; /* Datas */
 require("inport_thesa.php");
 
 $th = 156; /* Licenças */
-require("inport_thesa.php")
+require("inport_thesa.php");
 
 $th = 68; /* Bioquimica */
-require("inport_thesa.php")
+require("inport_thesa.php");
 
 /********************************** UNIVERSIDADE */
 if (1 == 2) {

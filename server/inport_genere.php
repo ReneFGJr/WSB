@@ -1,6 +1,6 @@
 <?php
 /********************************** Ciencia da Informação - thesa */
-echo 'GENERE '.$th.cr();
+echo 'GENERE '.cr();
 $file2 = '../.csv/genre.csv';
 
 $handle = fopen($file2, "r");

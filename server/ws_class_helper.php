@@ -321,7 +321,7 @@ class wsc //extends CI_Model
             $t = $this->link_internet($t);
             $t = $this->email($t);
 
-            $sb = array(':','?','#','!','?','"','(',')','{','}','[',']','-');
+            $sb = array(':','?','#','!','?','"','(',')','{','}','[',']','-','*','$','@','#','%');
             for ($r = 0;$r < count($sb);$r++)
                 {
                     $t = troca($t,$sb[$r],' '.$sb[$r].' ');

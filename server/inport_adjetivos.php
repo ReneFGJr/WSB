@@ -1,7 +1,7 @@
 <?php
 /********************************** Ciencia da Informação - thesa */
 $class = 'Adjective';
-echo '<h1>'.$class.'</h1>'.cr();
+echo cr().'=====>'.$class.cr();
 $file2 = '../.csv/adjetivos_pt.csv';
 
 $handle = fopen($file2, "r");
@@ -29,7 +29,7 @@ if ($handle) {
                     {
                         $dt[$hd[$r]] = $fd[$r];
                     }
-                echo '<br>=>'.$dt['skos:prefLabel'];
+                echo cr().'======>'.$dt['skos:prefLabel'];
                 $ws->save($dt, $dt['skos:prefLabel'],$force);
                 
             }

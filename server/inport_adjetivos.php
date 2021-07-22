@@ -25,7 +25,6 @@ if ($handle) {
                 $dt = array();
                 $dt['skos:prefLabel'] = trim($fd[0]);
                 $dt['Class'] = $class;               
-                print_r($fd);
                 for ($r=1;$r < count($fd);$r++)
                     {
                         

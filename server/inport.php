@@ -16,31 +16,41 @@ $ws = new wsc;
 $ws->dir = '../source/';
 $force = TRUE; /* Força gravação, se já existe dados */
 
-#require("inport_stopwords.php");
-#require("inport_simbolos.php");
-#require("inport_meses.php");
-#require("inport_adjetivos.php");
-#require("inport_paises.php");
-#require("inport_genere.php");
-#require("inport_years.php");
-#require("inport_meses.php");
-#require("inport_estdos_brasil.php");
-#require("inport_universidade.php");
+require("inport_stopwords.php");
+require("inport_simbolos.php");
+require("inport_meses.php");
+require("inport_adjetivos.php");
+require("inport_paises.php");
+require("inport_genere.php");
+require("inport_years.php");
+require("inport_meses.php");
+require("inport_estdos_brasil.php");
+require("inport_universidade.php");
 require("inport_cidade.php");
-exit;
-
 
 $th = 64; /* Ciencia da Informação */
 require("inport_thesa.php");
 
 $th = 8; /* Instituicoes */
-#require("inport_thesa.php");
+require("inport_thesa.php");
 
 $th = 373; /* Questions */
-//require("inport_thesa.php");
+require("inport_thesa.php");
 
-exit;
+$th = 269; /* Instituicoes Derwent */
+require("inport_thesa.php");
 
+$th = 250; /* Editoras */
+require("inport_thesa.php");
+
+$th = 10; /* Datas */
+require("inport_thesa.php");
+
+$th = 156; /* Licenças */
+require("inport_thesa.php")
+
+$th = 68; /* Bioquimica */
+require("inport_thesa.php")
 
 /********************************** UNIVERSIDADE */
 if (1 == 2) {
@@ -77,8 +87,6 @@ if (1 == 2) {
         fclose($handle);
     }
 }
-exit;
-
 
 /* Continente */
 $dt = array();

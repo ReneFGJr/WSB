@@ -1,7 +1,7 @@
 <?php
 /********************************** Ciencia da Informação - thesa */
 $class = 'Adjective';
-echo cr().'=====>'.$class.cr();
+echo $class.cr();
 $file2 = '../.csv/adjetivos_pt.csv';
 
 $handle = fopen($file2, "r");
@@ -29,7 +29,7 @@ if ($handle) {
                     {                        
                         if (!isset($hd[$r]))
                             {
-                                print_r($hd);
+                                //print_r($hd);
                             } else {
                                 $dt[$hd[$r]] = $fd[$r];
                             }

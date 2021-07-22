@@ -59,7 +59,6 @@ if (1 == 2) {
     if ($handle) {
         while (($line = fgets($handle)) !== false) {
             $line = utf8_encode($line);
-            echo $line . '<hr>';
             $ln = splitx(';', $line);
             $class = 'University';
             $dt = array();
@@ -79,9 +78,6 @@ if (1 == 2) {
             $dt['prefLabel'] = $ln[3];
             $dt['hasAbbreviationsOf'] = 'brapci:' . $ws->trata($ln[2]);
             $dt['Class'] = $class;
-            echo '<pre>';
-            echo '<h1>' . $name . '</h1>';
-            print_r($dt);
             $ws->save($dt, $name);
         }
         fclose($handle);

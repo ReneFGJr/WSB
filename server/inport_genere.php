@@ -35,4 +35,3 @@ if ($handle) {
 } else {
     echo "Erro ao ler o arquivo ".$file2;
 }
-echo "Importado ".$row." linhas ";

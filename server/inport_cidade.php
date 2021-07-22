@@ -1,7 +1,7 @@
 <?php
 /********************************** Ciencia da Informação - thesa */
 $class = 'City';
-echo cr().'######### Cidade';
+echo 'Cidades'.cr();
 $uf = array('sp','sc','rs','pr','es','sp','rj','pe','mg');
 $uf_name = array('São Paulo','Santa Catarina','Rio Grande do Sul','Paraná','Espirito Santo','São Paulo','Rio de Janeiro','Pernanbuco','Minas Gerais');
 for ($q=0;$q < count($uf);$q++)

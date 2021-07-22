@@ -174,7 +174,7 @@ class wsc //extends CI_Model
             $dt['created'] = date("Y-m-d") . 'T' . date("H:i:s");
             $json = json_encode($dt);
             $e = file_put_contents($file, $json);
-            //echo '<br>=File Saved ' . $file . '=';
+            echo cr();'===' . $name;
         } else {
             //echo 'Erro';
         }

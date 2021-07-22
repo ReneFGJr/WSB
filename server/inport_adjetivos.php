@@ -29,7 +29,6 @@ if ($handle) {
                     {
                         $dt[$hd[$r]] = $fd[$r];
                     }
-                echo cr().'======>'.$dt['skos:prefLabel'];
                 $ws->save($dt, $dt['skos:prefLabel'],$force);
                 
             }

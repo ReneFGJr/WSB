@@ -31,10 +31,6 @@ if ($handle) {
                     {
                         $dt[$hd[$r]] = $fd[$r];
                     }
-                echo cr().'=>'.$name;
-                echo '<pre>';
-                print_r($dt);
-                echo '</pre>';
                 $ws->save($dt, $name,$force);
                 
             }

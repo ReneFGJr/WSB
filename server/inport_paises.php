@@ -1,6 +1,6 @@
 <?php
 /********************************** Ciencia da Informação - thesa */
-echo 'COUNTRY '.$th.cr();
+echo 'COUNTRY '.cr();
 $file2 = '../.csv/paises_pt.csv';
 
 $handle = fopen($file2, "r");
@@ -28,7 +28,6 @@ if ($handle) {
                     {
                         $dt[$hd[$r]] = $fd[$r];
                     }
-                echo '=>'.$dt['skos:prefLabel'].cr();
                 $ws->save($dt, $dt['skos:prefLabel'],$force);
                 
             }

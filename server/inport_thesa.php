@@ -1,7 +1,7 @@
 <?php
 /********************************** Ciencia da Informação - thesa */
 echo 'THESA '.$th.cr();
-    $file2 = '../csv/thesa_'.$th.'.xml';
+    $file2 = '../.csv/thesa_'.$th.'.xml';
     
     if (!file_exists($file2)) {
         $url = 'https://www.ufrgs.br/tesauros/index.php/thesa/terms_from_to/'.$th.'/skos';

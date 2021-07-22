@@ -1,7 +1,7 @@
 <?php
 /********************************** Ciencia da Informação - thesa */
 $class = 'StateCountry';
-echo '<h1>'.$class.'</h1>'.cr();
+echo $class.cr();
 $file2 = '../.csv/estados_brasil_pt.csv';
 
 $handle = fopen($file2, "r");
@@ -40,4 +40,3 @@ if ($handle) {
 } else {
     echo "Erro ao ler o arquivo ".$file2;
 }
-echo "Importado ".$row." linhas ";

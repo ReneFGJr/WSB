@@ -1,6 +1,6 @@
 <?php
 /********************************** Ciencia da Informação - thesa */
-echo cr().'YEARS'.cr();
+echo 'YEARS'.cr();
 
     for ($r = 1900; $r < (date("Y")+1); $r++) {
          $nome = $r;

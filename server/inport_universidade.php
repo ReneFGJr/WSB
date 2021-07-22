@@ -1,7 +1,7 @@
 <?php
 /********************************** Ciencia da Informação - thesa */
 $class = 'University';
-echo '<h1>'.$class.'</h1>'.cr();
+echo $class.cr();
 $file2 = '../.csv/universidades_brasil.csv';
 
 $handle = fopen($file2, "r");

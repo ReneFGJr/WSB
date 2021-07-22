@@ -1,7 +1,7 @@
 <?php
 /********************************** Ciencia da Informação - thesa */
 $class = 'Month';
-echo '<h1>'.$class.'</h1>'.cr();
+echo $class.cr();
 $s = array(
     'Janeiro',
     'Fevereiro',

@@ -27,7 +27,13 @@ if ($handle) {
                 $dt['Class'] = $class;               
                 for ($r=1;$r < count($fd);$r++)
                     {                        
-                        $dt[$hd[$r]] = $fd[$r];
+                        if (!isset($fd[$r]))
+                            {
+                                print_r($fd);
+                            } else {
+                                $dt[$hd[$r]] = $fd[$r];
+                            }
+                        
                     }
                 $ws->save($dt, $dt['skos:prefLabel'],$force);                
             }
